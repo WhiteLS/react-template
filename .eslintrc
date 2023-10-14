@@ -1,0 +1,122 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "JSX": "readonly"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jest", "@typescript-eslint"],
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single"],
+    "no-console": "off",
+    "no-shadow": "off",
+    "arrow-spacing": [2, { "before": true, "after": true }],
+    "object-curly-spacing": [2, "never"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "argsIgnorePattern": "^_" }
+    ],
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "no-param-reassign": [
+      2,
+      {
+        "props": false
+      }
+    ],
+    "react/jsx-filename-extension": [
+      0,
+      { "allow": "as-needed", "extensions": [".tsx", ".jsx"] }
+    ],
+    "max-len": [
+      2,
+      {
+        "code": 125,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "jsx-quotes": [2, "prefer-single"],
+    "@typescript-eslint/no-use-before-define": [0],
+    "react/require-default-props": [0],
+    "import/prefer-default-export": "off",
+    "arrow-parens": "off",
+    "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
+    "react/button-has-type": [0],
+    "implicit-arrow-linebreak": [2, "beside"],
+    "no-use-before-define": [0],
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }],
+    "function-paren-newline": [2, "consistent"],
+    "consistent-return": [0],
+    "no-static-element-interactions": [0],
+    "no-implicit-coercion": [2, { "string": false }],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "jsx-a11y/interactive-supports-focus": [0],
+    "jsx-a11y/no-noninteractive-element-interactions": [0],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "controlComponents": ["Controller", "InputMask"]
+      }
+    ],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/control-has-associated-label": [0],
+    "react/no-danger": [0],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
+    ],
+    "func-style": [2, "expression"],
+    "@typescript-eslint/array-type": [2, { "default": "array" }],
+    "@typescript-eslint/ban-types": [
+      2,
+      {
+        "types": {
+          "object": false,
+          "Function": false
+        }
+      }
+    ],
+    "@typescript-eslint/consistent-indexed-object-style": [2],
+    "@typescript-eslint/consistent-type-assertions": [
+      2,
+      { "assertionStyle": "as" }
+    ],
+    "@typescript-eslint/method-signature-style": [2],
+    "@typescript-eslint/consistent-type-definitions": [2],
+    "@typescript-eslint/prefer-function-type": [2],
+    "@typescript-eslint/explicit-module-boundary-types": [0],
+    "@typescript-eslint/no-inferrable-types": [1], // пересмотреть
+    "@typescript-eslint/no-empty-interface": [1], // пересмотреть
+    "@typescript-eslint/no-non-null-assertion": [1], // пересмотреть
+    "@typescript-eslint/no-explicit-any": [1], // пересмотреть
+    "@typescript-eslint/ban-ts-comment": [
+      2,
+      { "ts-ignore": "allow-with-description" }
+    ],
+    "react/jsx-props-no-spreading": [2]
+  }
+}

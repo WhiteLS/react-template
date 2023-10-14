@@ -1,0 +1,29 @@
+@font-face {
+  font-family: ObjectSans;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/ObjectSans/Medium/ObjectSans-Medium.eot');
+  src: url('./assets/fonts/ObjectSans/Medium/ObjectSans-Medium.eot?#eifix')
+    format('embedded=opentype'),
+    url('./assets/fonts/ObjectSans/Medium/ObjectSans-Medium.woff')
+    format('woff'),
+    url('./assets/fonts/ObjectSans/Medium/ObjectSans-Medium.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: ObjectSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/ObjectSans/Regular/ObjectSans-Regular.eot');
+  src: url('./assets/fonts/ObjectSans/Regular/ObjectSans-Regular.eot?#eifix')
+    format('embedded=opentype'),
+    url('./assets/fonts/ObjectSans/Regular/ObjectSans-Regular.woff')
+    format('woff'),
+    url('./assets/fonts/ObjectSans/Regular/ObjectSans-Regular.ttf')
+    format('truetype');
+}
+
+* {
+  font-family: ObjectSans, Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
